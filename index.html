@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería Moderna - Cita Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Barbería Moderna</h1>
+        <nav>
+            <ul>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#citas">Citas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <ul>
+                <li>Corte de Pelo</li>
+                <li>Corte de Barba</li>
+                <li>Corte de Cabello</li>
+                <li>Depilación</li>
+            </ul>
+        </section>
+        <section id="citas">
+            <h2>Citas</h2>
+            <form action="#" method="post">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div>
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required>
+                </div>
+                <div>
+                    <label for="servicio">Servicio:</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="corte-pelo">Corte de Pelo</option>
+                        <option value="corte-barba">Corte de Barba</option>
+                        <option value="corte-cabello">Corte de Cabello</option>
+                        <option value="depilacion">Depilación</option>
+                    </select>
+                </div>
+                <button type="submit">Reservar Cita</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Barbería Moderna. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
